@@ -1,11 +1,11 @@
-Simple Go application. When started, it
+Simple Go application. When started (serv.go), it
 will listen on port 5555 (but this may be configurable through a
 command-line flag). Clients will be able to connect to this port and
 send arbitrary natural language over the wire. The purpose of the
 application is to process the text, and store some stats about the
 different words that it sees.
 
-The application will also expose an HTTP interface on port 8080
+The application (web.go) will also expose an HTTP interface on port 8080
 (configurable): clients hitting the /stats endpoint will receive a JSON
 representation of the statistics about the words that the application has
 seen so far.
